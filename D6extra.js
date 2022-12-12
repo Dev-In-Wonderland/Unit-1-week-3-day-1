@@ -107,7 +107,7 @@ console.log(addToShoppingCart(shoppingCart, nuovoAcquisto))
 
 
 
-
+//La variabile shoppingCart è all'esercizio precedente
 
 
 
@@ -144,6 +144,13 @@ console.log ("Il prodotto più costoso del carrello è: ", maxShoppingCart(shopp
  Nel tuo eCommerce disponi di un'array di oggetti chiamato "shoppingCart". Ognuno di questi oggetti ha le seguenti proprietà: "price", "name", "id" e "quantity".
  Crea una funzione chiamata "latestShoppingCart" che riceve l'array "shoppingCart" e ritorna l'ultimo elemento.
 */
+let ultimoOggetto = shoppingCart[3]
+function latestShoppingCart (shoppingCart)  {
+    
+    return console.log ("Questo ", ultimoOggetto, "è l' ultimo oggetto dell' array")
+}
+
+latestShoppingCart (shoppingCart)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
