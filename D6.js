@@ -131,7 +131,14 @@ console.log (epicode) */
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+/* function reverseString (a){
+    return a.reverse()
+}
+
+let reverse = reverseString (a)
+
+console.log(reverse) */
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
