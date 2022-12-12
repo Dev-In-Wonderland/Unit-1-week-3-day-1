@@ -171,28 +171,38 @@ console.log(upperedwords)
  della stringa originale.
 */
 
+/*function cutString(cut){
+    if(typeof cut === "string"){
+        let inTheMiddleoftheString = cut.slice(1, -1)
+        console.log(inTheMiddleoftheString)
 
-function cutString (string){
-    let cutstring
-    if(typeof string === "string") {
-        cutstring = string.slice(1, -1)
-        console.log (cutString)
     }else{
-        console.log("Inserisci stringa")
+        console.log ("Non è una stringa")
+
     }
-cutString("ciao")
-
-
 
 }
+cutString("dromedario")*/
 
-
-
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+
+/*  function giveMeRandom (num){
+    if(typeof num !== "number") {
+        return "Non è stata inserito un numero"
+    }else{
+        let arrayNum = []
+        for(let i = 0; i < num; i++) {
+            arrayNum.push(Math.floor(Math.random() * 11))
+        }
+        return arrayNum
+    }
+} 
+const risultatoEser10 = giveMeRandom(25)
+
+console.log(risultatoEser10)
+   */
