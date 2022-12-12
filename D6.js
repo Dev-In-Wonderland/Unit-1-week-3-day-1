@@ -87,70 +87,107 @@ console.log("Verifica della funzione: ", verificaFunzione)
 */
 
 
-
-/* 
-function epify(a){
-    let b = "EPICODE"
-    let c = b + a
-    if(typeof a === String){
-        return c
-
-    }else if(typeof a === String && a.startsWith("EPICODE")){
-        return a
+/*function epify (text){
+    typeof text !== "string" || true
+    if (text.startsWith("EPICODE")){
+        return text
+    }else{
+        return "EPICODE" +  text
     }
-    else{
-        return "Non è una stringa"
-    }
-
-
 }
-let prova = "aEPICODEepicode"
-let epicode = epify(prova)
 
-console.log (epicode) */
+let epicode = epify("EPICODE epicode")
+console.log(epicode)
+ */
+
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
-
-/* function check3and7(a){
-    if (a > 0 && (a%3 === 0 || a%7===0)){
-        return true
-    }else{
-        return false
+/*
+ function check3and7(a){
+    if(a<=0 || typeof a !== "number") {
+    let check = "Il valore inserito non è un numero o è un numero negativo"
+}else{
+    switch (0) {
+        case a % 7:
+            check = "Il valore inserito è un multiplo di 7";
+            break;
+        case a % 3:
+            check = "Il valore inserito è un multiplo di 3";
+            break;
+            default: 
+            check = "Il valore inserito non è multiplo di 3 o di 7";
+            break;
     }
+return check
 }
-    
-    let verificadellaFunzione = check3and7(a)
-    console.log("Verifica della funzione", verificadellaFunzione)
+ }
 
- */
+console.log("Verifica della funzione: ",  check3and7(9))
+*/
+
+
+    
+
+ 
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
 
-/* function reverseString (a){
-    return a.reverse()
+/* const mioNome = `Tommaso`
+function reverseString(myName) {
+    let revStringa
+    return (revStringa = myName.split(``).reverse().join(``))
 }
+const risultatoEser7 = reverseString(mioNome)
 
-let reverse = reverseString (a)
-
-console.log(reverse) */
+console.log(risultatoEser7)
+*/
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
+
+/* function upperFirst (string1) {
+    const splitString = string1.split(" ")
+    for (let i = 0; i< splitString.length; i++){
+        splitString[i] = splitString[i].charAt(0).toUpperCase() + splitString[i].substring(1)
+    }
+    return splitString.join(" ")
+}
+let upperedwords = upperFirst("Stringa di diverse parole")
+console.log(upperedwords)
+ */
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
+
+
+function cutString (string){
+    let cutstring
+    if(typeof string === "string") {
+        cutstring = string.slice(1, -1)
+        console.log (cutString)
+    }else{
+        console.log("Inserisci stringa")
+    }
+cutString("ciao")
+
+
+
+}
+
+
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
