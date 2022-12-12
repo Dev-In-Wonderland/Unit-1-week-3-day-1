@@ -51,10 +51,10 @@ console.log ("Il risultato è: ", risultato3) */
 /* function crazyDiff(a) {
     
     if(a > 19){
-        return Math.abs((a-19) * 3)
+        return Math.abs((a - 19) * 3)
     }
     else{
-        return Math.abs(a-19)
+        return Math.abs(a - 19)
     }
 }
 
@@ -69,7 +69,7 @@ console.log("Il risultato è", risultato2 )
 
 
 /* function boundary(b) {
-    if(20<b<=100 || b === 400)
+    if(20 < b <= 100 || b === 400)
     {return true}else{
         return false
     }
